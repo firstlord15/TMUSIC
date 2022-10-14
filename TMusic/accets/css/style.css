@@ -1,0 +1,64 @@
+@font-face {
+    font-family: raleway_f;
+    src: url(/accets/fonts/raleway-black.woff2);
+
+}
+@font-face {
+    font-family: raleway_f;
+    src: url(/accets/fonts/raleway-regular.woff2);
+    
+}
+
+
+body{
+    background-color: #1B1B1B;
+    margin: 0 auto;
+    /* font-family: raleway_f, sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.header{
+    /* background: url(/accets/img/header_bg.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+}
+
+.animation a {
+    display: inline-block!important;
+    line-height: 1!important;
+    text-decoration: none!important; /* Убираем подчеркивание */
+    cursor: pointer!important;
+}
+.animation a:after {
+    background-color: #f66d52!important; /* Цвет линии при наведении на нее курсора мыши */
+    display: block!important;
+    content: ""!important;
+    margin-top: 10px;
+    height: 3px!important; /* Высота линии */
+    width: 0%!important;
+    -webkit-transition: width .2s ease-in-out!important;
+    -moz--transition: width .2s ease-in-out!important;
+    transition: width .2s ease-in-out!important;
+}
+.animation a:hover:after,
+.animation a:focus:after {
+    width: 100%!important;
+}
+
+
+.bg-light {
+    background-color: rgba(17, 17, 17, 0.4)!important;
+}
+
+.nav-link{
+    font-size: 17px;
+}
+
+.fixed-top {
+    left: 100px!important;
+    right: 100px!important;
+    top: 15px!important;
+}
