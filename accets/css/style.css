@@ -4,10 +4,25 @@
 }
 
 body{
-    background-color: #1B1B1B;
+    background-color: #1B1B1B!important;
     margin: 0 auto;
     /* font-family: raleway_f, sans-serif; */
     font-family: 'Raleway', sans-serif;
+}
+
+.box {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.logo_in_nav {
+    width: 200px;
+}
+
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(1 20 26 / 25%));
+    box-shadow: black 0px 19px 20px -20px;
 }
 
 .header{
@@ -26,15 +41,15 @@ body{
     cursor: pointer!important;
 }
 .animation a:after {
-    background-color: #f66d52!important; /* Цвет линии при наведении на нее курсора мыши */
+    background-color: rgb(230, 143, 36)!important; /* Цвет линии при наведении на нее курсора мыши */
     display: block!important;
     content: "" !important;
-    margin-top: 10px;
-    height: 3px!important; /* Высота линии */
+    margin-top: 5px;
+    height: 2px!important; /* Высота линии */
     width: 0%!important;
-    -webkit-transition: width .2s ease-in-out!important;
-    -moz--transition: width .2s ease-in-out!important;
-    transition: width .2s ease-in-out!important;
+    -webkit-transition: width .28s ease-in-out!important;
+    -moz--transition: width .28s ease-in-out!important;
+    transition: width .28s ease-in-out!important;
 }
 .animation a:hover:after,
 .animation a:focus:after {
@@ -51,71 +66,52 @@ body{
     color: white!important;
 }
 
-.nav-link:hover{
-    color: rgb(36, 182, 212)!important;
-    text-shadow: rgb(48, 220, 255) 0px 0px 7px;
-    transition: all 0.2s;
-}
-
 .fixed-top {
     left: 100px!important;
     right: 100px!important;
     top: 15px!important;
 }
 
+.logo {
+    width: 700px;
+    display: block;
+    padding-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .main_text {
-    padding-top: 15%;
+    color: rgb(36, 217, 230); 
+    font-size: 150px; 
+    text-align: center;
 }
 
-.back {
+@media screen and (max-width: 980px) {
+    .logo{
+        width: 80%;
+    }
 
+    .logo-nav {
+        font-size: 15px;
+    }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-svg {
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+@media screen and (max-width: 580px) {
+    .logo_in_nav{
+        width: 80px;
+    }
 }
 
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+@media screen and (max-width: 380px) {
+    .logo_in_nav{
+        width: 50px;
+    }
 }
 
-.text-copy:nth-child(1){
-	stroke: #164d4a;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #00847d;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #00bdad;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #00bdb4;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #fd317f;
-	animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+@media screen and (min-width: 1200px) {
+    @media screen and (max-width: 1900px) {
+        .logo {
+            padding-top: 30%;
+        }
+    } 
 }
