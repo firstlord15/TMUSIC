@@ -1,19 +1,18 @@
-@font-face {
-    font-family: raleway_f;
-    src: url(/accets/fonts/PaytoneOne-Regular.ttf);
-}
-
 body{
+    /* background: linear-gradient(#1B1B1B, #141414)!important; */
     background-color: #1B1B1B!important;
-    margin: 0 auto;
-    /* font-family: raleway_f, sans-serif; */
     font-family: 'Raleway', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .box {
-    width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    color: white;
+    padding: 100px;
 }
 
 .logo_in_nav {
@@ -21,7 +20,7 @@ body{
 }
 
 .navbar {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(1 20 26 / 25%));
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(1 20 26 / 50%));
     box-shadow: black 0px 19px 20px -20px;
 }
 
@@ -33,6 +32,8 @@ body{
     width: 100%;
     height: 100vh;
 }
+
+/* анимация кнопок в header */ 
 
 .animation a {
     display: inline-block!important;
@@ -55,6 +56,7 @@ body{
 .animation a:focus:after {
     width: 100%!important;
 }
+
 
 
 .bg-light {
@@ -84,6 +86,67 @@ body{
     color: rgb(36, 217, 230); 
     font-size: 150px; 
     text-align: center;
+}
+
+.mini_text_boxs {
+    height: 35px;
+    width: 600px;
+    margin-top: 120px;
+}
+
+.mini_text_box {
+    width: 50%;
+    height: 35px;
+    float: left;
+    margin-top: 30px;
+}
+
+.mini_text_box p {
+    color: rgb(69, 244, 238);
+    width: 100%!important;
+}
+
+.mini_text_box div{
+    background-color: coral;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 0px;
+    float: left;
+    margin-right: 20px;
+}
+
+.first_box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.first_imgs {
+    margin-top: 50px;
+    margin-right: 20%;
+    position: relative;
+}
+
+.first_img {
+    position: absolute;
+    width: 470px;
+    height: 440px;
+    border-radius: 50px 0px;
+}
+
+.text_box p {
+    width: 600px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.text_box h1 {
+    margin-bottom: 70px;
+}
+
+.vocum {
+    width: 50px;
+    vertical-align: sub;
 }
 
 @media screen and (max-width: 980px) {
